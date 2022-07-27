@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://source.unsplash.com/mLnG4BkTz54/1600x800');
+    background-repeat: no-repeat;
+    background-size:cover;
+    color: white;
+}
+
+.drums{
+    display: flex;
+}
+
+.key{
+    border: 1px solid white;
+    padding: 1rem;
+    transition: .2s background ease-in-out;
+}
+
+.key:not(:first-child){
+    margin-left: 1rem;
+}
+
+.key:hover{
+    background: rgba(255, 255, 255, .5);
+    cursor: pointer;
+}
